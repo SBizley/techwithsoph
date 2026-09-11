@@ -7,16 +7,16 @@
    ============================================ */
 
 :root {
-  --bg: #FBF3E7;
+  --bg: #F9F5FC;
   --bg-card: #FFFFFF;
   --ink: #1A1425;
   --ink-soft: #4A4358;
   --primary: #6D28D9;
   --primary-dark: #4C1D95;
   --coral: #E8486B;
-  --lime: #7C9A1E;
   --teal: #147A70;
   --yellow: #C97F0A;
+  --lime: #C6EA3E;
   --border: #E9DFC9;
   --radius: 16px;
   --max-width: 1080px;
@@ -36,13 +36,20 @@ body {
 }
 
 h1, h2, h3, .brand {
-  font-family: 'Fredoka', 'Inter', system-ui, sans-serif;
+  font-family: 'Unbounded', 'Inter', system-ui, sans-serif;
   font-weight: 600;
   color: var(--ink);
   line-height: 1.2;
 }
 
 h1 { font-size: clamp(2.1rem, 5vw, 3.2rem); margin: 0 0 0.5rem; }
+
+.hero h1 {
+  background: linear-gradient(100deg, var(--primary) 0%, var(--coral) 55%, var(--yellow) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 h2 { font-size: clamp(1.5rem, 3.5vw, 2.1rem); margin: 0 0 0.75rem; }
 h3 { font-size: 1.25rem; margin: 0 0 0.5rem; }
 
@@ -149,7 +156,7 @@ nav.site-nav a[aria-current="page"] {
 
 .hero .kicker {
   display: inline-block;
-  background: var(--yellow);
+  background: var(--lime);
   color: var(--ink);
   font-weight: 700;
   font-size: 0.85rem;
@@ -252,7 +259,7 @@ table.compare th, table.compare td {
 table.compare thead th {
   background: var(--ink);
   color: #fff;
-  font-family: 'Fredoka', sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-size: 1.05rem;
 }
 
