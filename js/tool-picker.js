@@ -17,7 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
     gemini: 'Gemini',
     lovable: 'Lovable',
     notebooklm: 'NotebookLM',
-    copilot: 'Copilot'
+    copilot: 'Copilot',
+    perplexity: 'Perplexity'
   };
 
   var tree = {
@@ -41,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
       ]
     },
     ongoing: {
-      question: 'Mostly writing and thinking things through, or digging through your own documents?',
+      question: 'Writing and thinking things through, digging through your own documents, or researching something on the web?',
       options: [
         {
           label: 'Writing and thinking things through',
@@ -54,6 +55,12 @@ document.addEventListener('DOMContentLoaded', function () {
           next: 'result',
           result: 'notebooklm',
           reason: 'Upload your own files and it becomes an expert on exactly that content, with sources you can check.'
+        },
+        {
+          label: 'Researching something on the web',
+          next: 'result',
+          result: 'perplexity',
+          reason: 'It searches, reads the results and gives you an answer with sources you can click through, rather than a page of links to sift through yourself.'
         }
       ]
     },
