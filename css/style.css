@@ -489,3 +489,42 @@ footer.site-footer a { color: var(--ink-soft); }
 
   .about-hero-row { justify-content: center; text-align: left; }
 }
+
+/* ---------- Term list (jargon library, replaces boxed cards) ---------- */
+
+.term-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--border);
+}
+
+.term-row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 28px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.term-name {
+  font-family: 'Unbounded', 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ink);
+  transition: color 0.15s ease;
+}
+
+.term-row:hover .term-name { color: var(--primary); }
+
+.term-def {
+  color: var(--ink-soft);
+  max-width: 62ch;
+}
+
+@media (max-width: 620px) {
+  .term-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 18px 0;
+  }
+}
