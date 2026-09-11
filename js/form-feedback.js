@@ -2,7 +2,7 @@
 // forms, so submitting doesn't just silently reload the page.
 
 document.addEventListener('DOMContentLoaded', function () {
-  var forms = document.querySelectorAll('form[name="learn-request"]');
+  var forms = document.querySelectorAll('form[data-ajax-form]');
 
   forms.forEach(function (form) {
     var status = form.parentElement.querySelector('.form-status');

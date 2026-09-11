@@ -103,11 +103,39 @@
     </div>
   </section>
 
+  <section>
+    <div class="wrap">
+      <div class="section-intro">
+        <h2>From the community</h2>
+        <p>Real use cases other readers have actually tried, not case studies I made up. Send yours in below, and if it's genuinely useful, it goes up here, with your name on it or anonymous, your call.</p>
+      </div>
+      <div class="callout">
+        <strong>Nothing here yet.</strong> This section only just went up, be the first one in it.
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap learn-form">
+      <h2>Got a use case worth sharing?</h2>
+      <p>Tell me what you actually used AI for and roughly how you did it. I read every one of these myself.</p>
+      <form name="community-submission" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-ajax-form>
+        <input type="hidden" name="form-name" value="community-submission">
+        <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+        <input type="text" name="use_case" placeholder="What did you use AI for?" required>
+        <input type="text" name="display_name" placeholder="Name, or 'anonymous', your call">
+        <input type="email" name="email" placeholder="Email (optional, if you want a reply)">
+        <button type="submit" class="btn btn-primary">Send it over</button>
+      </form>
+      <div class="form-status" hidden></div>
+    </div>
+  </section>
+
   <section class="alt">
     <div class="wrap learn-form">
       <h2>Tried one of these? Or stuck on something else?</h2>
       <p>Tell me what you're actually trying to do and I'll turn it into a proper example.</p>
-      <form name="learn-request" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <form name="learn-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-ajax-form>
         <input type="hidden" name="form-name" value="learn-request">
         <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
         <input type="text" name="topic" placeholder="What are you trying to do?" required>
