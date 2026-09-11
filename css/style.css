@@ -205,6 +205,7 @@ section.alt {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: stretch;
 }
 
 .card {
@@ -212,11 +213,18 @@ section.alt {
   border: 2px solid var(--border);
   border-radius: var(--radius);
   padding: 24px;
+  display: flex;
+  flex-direction: column;
 }
 
-.card.accent-violet { border-color: var(--primary); }
-.card.accent-coral { border-color: var(--coral); }
-.card.accent-teal { border-color: var(--teal); }
+/* Accent classes stay in the markup for now but no longer paint a
+   rainbow of border colours, a single calm border reads as one set
+   of options rather than three "important" ones and four afterthoughts. */
+.card.accent-violet,
+.card.accent-coral,
+.card.accent-teal {
+  border-color: var(--border);
+}
 
 .tag {
   display: inline-block;
