@@ -37,33 +37,49 @@
 
   <section style="padding-top: 8px;">
     <div class="wrap">
+
+      <div class="section-intro">
+        <h2>What are you actually trying to do?</h2>
+        <p>Pick your task and I'll jump you straight to the answer, or just scroll and read all six yourself.</p>
+      </div>
+
+      <div class="chip-row" role="group" aria-label="Pick your task">
+        <button type="button" class="chip" data-target="chatgpt">Writing &amp; everyday questions</button>
+        <button type="button" class="chip" data-target="chatgpt">Image generation</button>
+        <button type="button" class="chip" data-target="claude">Ongoing projects</button>
+        <button type="button" class="chip" data-target="notebooklm">Research from my own documents</button>
+        <button type="button" class="chip" data-target="gemini">Gmail, Calendar &amp; meeting notes</button>
+        <button type="button" class="chip" data-target="lovable">Building an app or website</button>
+        <button type="button" class="chip" data-target="copilot">Word, Excel &amp; Outlook</button>
+      </div>
+
       <div class="grid">
-        <div class="card accent-violet">
+        <div class="card accent-violet" id="tool-chatgpt">
           <span class="tag tag-violet">Everyday questions &amp; writing</span>
           <h3>Use ChatGPT</h3>
-          <p>It's the one most people land on first, and it's a genuinely solid all-rounder for quick questions, drafting messages, and general writing help. If you only ever install one thing, this is the safe default.</p>
+          <p>It's the one most people land on first, and it's a genuinely solid all-rounder for quick questions, drafting messages, and general writing help. It's also my go-to recommendation for image generation, since it's the most widely used option for it. If you only ever install one thing, this is the safe default.</p>
         </div>
-        <div class="card accent-coral">
+        <div class="card accent-coral" id="tool-claude">
           <span class="tag tag-coral">Anything you're building on over time</span>
           <h3>Use Claude</h3>
           <p>This is my own daily tool, and specifically where it wins: organising a project, coming back to something across several sessions, or working through documents. If ChatGPT is a quick chat, this is more like a colleague who remembers the project.</p>
         </div>
-        <div class="card accent-teal">
+        <div class="card accent-teal" id="tool-gemini">
           <span class="tag tag-teal">You live in Gmail &amp; Google Calendar</span>
           <h3>Use Gemini</h3>
           <p>Its real strength is how tightly it sits inside Google's own apps, meeting notes, your inbox, your calendar. If your life already runs on Google, this is the one that plugs straight in.</p>
         </div>
-        <div class="card">
+        <div class="card" id="tool-lovable">
           <span class="tag tag-yellow">You want to build something, not just chat</span>
           <h3>Use Lovable</h3>
           <p>If you want an actual app, website, or tracker built and you don't want to write code, this is built exactly for that. Describe what you want in plain English and it builds a working version.</p>
         </div>
-        <div class="card">
+        <div class="card" id="tool-notebooklm">
           <span class="tag tag-violet">Digging through your own documents</span>
           <h3>Use NotebookLM</h3>
           <p>Upload your own files, research, notes, whatever, and it becomes an expert on exactly that content, with sources you can check. Genuinely underrated for anything research-heavy.</p>
         </div>
-        <div class="card">
+        <div class="card" id="tool-copilot">
           <span class="tag tag-coral">Already living in Microsoft 365</span>
           <h3>Use Copilot</h3>
           <p>If your work already runs on Word, Excel and Outlook, Copilot is the one that's already sitting inside them. Less exciting than the others, genuinely useful if that's your world.</p>
@@ -121,6 +137,8 @@
     <p>Tech with Soph. Built by a product manager, not a marketing team. Nothing here is sponsored.</p>
   </div>
 </footer>
+
+<script src="js/tool-picker.js"></script>
 
 </body>
 </html>
