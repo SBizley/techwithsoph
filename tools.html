@@ -41,17 +41,15 @@
 
       <div class="section-intro">
         <h2>What are you actually trying to do?</h2>
-        <p>Pick your task and I'll jump you straight to the answer, or just scroll and read all six yourself.</p>
+        <p>Answer a couple of quick questions and I'll point you at the right one, or skip it and scroll through all six yourself.</p>
       </div>
 
-      <div class="chip-row" role="group" aria-label="Pick your task">
-        <button type="button" class="chip" data-target="chatgpt">Writing &amp; everyday questions</button>
-        <button type="button" class="chip" data-target="chatgpt">Image generation</button>
-        <button type="button" class="chip" data-target="claude">Ongoing projects</button>
-        <button type="button" class="chip" data-target="notebooklm">Research from my own documents</button>
-        <button type="button" class="chip" data-target="gemini">Gmail, Calendar &amp; meeting notes</button>
-        <button type="button" class="chip" data-target="lovable">Building an app or website</button>
-        <button type="button" class="chip" data-target="copilot">Word, Excel &amp; Outlook</button>
+      <div class="quiz" id="tool-quiz" aria-live="polite">
+        <div class="quiz-progress" id="quiz-progress" aria-hidden="true">
+          <span class="quiz-dot"></span>
+          <span class="quiz-dot"></span>
+        </div>
+        <div id="quiz-body"></div>
       </div>
 
       <div class="grid">
