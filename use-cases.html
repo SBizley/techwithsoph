@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech with Soph: try this today</title>
+<meta name="description" content="Real AI use cases with copy-paste prompts you can try right now, no prompting course required.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="brand"><span class="dot"></span> Tech with Soph</a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="tools.html">Which tool for what</a>
+      <a href="use-cases.html" aria-current="page">Try this today</a>
+      <a href="glossary.html">Plain-English terms</a>
+      <a href="risks.html">Risks &amp; opportunities</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" style="padding-bottom: 12px;">
+    <div class="wrap">
+      <span class="kicker">Pick one, try it now</span>
+      <h1>Five real things to try today</h1>
+      <p class="lead">Not ten tips, not a course. One real task, done properly, teaches you more than a week of reading about AI. Pick whichever of these matches something you're actually dealing with, copy the prompt, swap in your own details, and see what comes back.</p>
+    </div>
+  </section>
+
+  <section style="padding-top: 8px;">
+    <div class="wrap">
+
+      <div class="card accent-violet" style="margin-bottom: 24px;">
+        <span class="tag tag-violet">Travel &amp; events</span>
+        <h3>Plan a trip when you don't know where to start</h3>
+        <p>This is the one I used on my own mum, she wanted to plan a trip and had no idea where to begin. Give it a destination, some dates, and a budget, and it'll build you an actual day-by-day plan you can adjust.</p>
+        <div class="prompt-block">I'm planning a trip to [destination] for [number] days in [month]. My budget is roughly [amount]. I'm travelling with [who]. Build me a day-by-day itinerary with a mix of the big must-see things and some quieter local spots, and flag anything that needs booking in advance.</div>
+        <div class="prompt-block">I've got a rough plan for [destination] already: [paste what you have, even if it's messy]. Look at it and tell me what's missing, what's overambitious for the time I've got, and what order actually makes sense given the locations.</div>
+      </div>
+
+      <div class="card accent-coral" style="margin-bottom: 24px;">
+        <span class="tag tag-coral">Money</span>
+        <h3>Get on top of your finances using your own numbers</h3>
+        <p>Not generic budgeting advice, your actual numbers. Export a bank statement or just list out what you spend, and ask it to build you something you can actually use and come back to.</p>
+        <div class="prompt-block">Here's what I spend in a typical month: [list your income and outgoings, or paste a bank statement export]. Build me a simple monthly budget, tell me where the money's actually going, and suggest where I could realistically cut back without me having to give up everything I enjoy.</div>
+        <div class="prompt-block">I want to save [amount] for [goal] by [date]. Based on what I've told you about my spending, work out what I'd need to save each month to hit that, and tell me honestly whether it's realistic.</div>
+        <p style="margin-top: 14px; color: var(--ink-soft); font-size: 0.95rem;">Worth knowing: don't paste in full account numbers or sort codes, you don't need them for this and it's just not necessary information to hand over. See <a href="risks.html">risks &amp; opportunities</a> for more on this.</p>
+      </div>
+
+      <div class="card accent-teal" style="margin-bottom: 24px;">
+        <span class="tag tag-teal">Work &amp; life admin</span>
+        <h3>Draft the email you're avoiding</h3>
+        <p>Everyone has one. A message that needs the right tone and you keep putting off because you don't know how to phrase it.</p>
+        <div class="prompt-block">I need to write an email to [who] about [what's happening]. I want to come across as [e.g. firm but fair / apologetic but clear / friendly but professional]. Here's roughly what I want to say: [your rough notes, doesn't need to be polished]. Write me a draft, and keep it short, nobody wants to read three paragraphs.</div>
+      </div>
+
+      <div class="card" style="margin-bottom: 24px;">
+        <span class="tag tag-yellow">Start here if nothing else</span>
+        <h3>Automate one thing you do by hand every week</h3>
+        <p>This is my one piece of advice, repeated because it matters: don't try to use AI for everything at once. Find one repetitive thing you do manually and hand it over.</p>
+        <div class="prompt-block">Every week I have to [describe the repetitive task, e.g. "write a summary of what happened for my team" or "go through receipts and work out what to claim back"]. Here's what that usually involves: [describe your current process]. Suggest a simpler way to do this, and if it's something you can help me build (like a template, a checklist, or a small tracker), build it with me now.</div>
+      </div>
+
+      <div class="card" style="margin-bottom: 8px;">
+        <span class="tag tag-violet">Big decisions</span>
+        <h3>Make sense of a big life-admin decision</h3>
+        <p>A move, a mortgage, a big purchase, the kind of decision where you don't even know what questions to ask yet.</p>
+        <div class="prompt-block">I'm trying to decide whether to [describe the decision, e.g. "remortgage now or wait", "buy or lease a car", "move to a new area"]. Here's what I know so far: [your situation and any numbers you have]. Don't just give me an answer, tell me what questions I should actually be asking, and what I'd need to find out before I could decide properly.</div>
+        <p style="margin-top: 14px; color: var(--ink-soft); font-size: 0.95rem;">Use this to get organised and ask better questions, not as a replacement for real financial or legal advice on anything big. More on that in <a href="risks.html">risks &amp; opportunities</a>.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap learn-form">
+      <h2>Tried one of these? Or stuck on something else?</h2>
+      <p>Tell me what you're actually trying to do and I'll turn it into a proper example.</p>
+      <form name="learn-request" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="learn-request">
+        <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+        <input type="text" name="topic" placeholder="What are you trying to do?" required>
+        <input type="email" name="email" placeholder="Email (optional, if you want a reply)">
+        <button type="submit" class="btn btn-primary">Send it over</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Tech with Soph. Built by a product manager, not a marketing team. Nothing here is sponsored.</p>
+  </div>
+</footer>
+
+</body>
+</html>

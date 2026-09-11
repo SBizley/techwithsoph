@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech with Soph: plain-English AI terms</title>
+<meta name="description" content="Prompt, hallucination, token and the rest, explained in plain English, no dictionary tone.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="brand"><span class="dot"></span> Tech with Soph</a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="tools.html">Which tool for what</a>
+      <a href="use-cases.html">Try this today</a>
+      <a href="glossary.html" aria-current="page">Plain-English terms</a>
+      <a href="risks.html">Risks &amp; opportunities</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" style="padding-bottom: 12px;">
+    <div class="wrap">
+      <span class="kicker">No dictionary tone, promise</span>
+      <h1>The words people throw around, actually explained</h1>
+      <p class="lead">Nobody explains these properly, they just assume you already know them. You don't need to memorise this, just come back whenever someone uses one of these words at you.</p>
+    </div>
+  </section>
+
+  <section style="padding-top: 8px;">
+    <div class="wrap">
+      <div class="grid">
+
+        <div class="card accent-violet">
+          <h3>Prompt</h3>
+          <p>Just the thing you type or say to an AI tool. That's it. "Write me an email" is a prompt. There's no special skill required to have one, though a more specific prompt gets you a more useful answer.</p>
+        </div>
+
+        <div class="card accent-coral">
+          <h3>Hallucination</h3>
+          <p>When an AI states something confidently that's just wrong. It won't say "I'm not sure", it'll say something false as if it's fact. This is the single biggest reason to double-check anything that actually matters (numbers, dates, legal or medical specifics) before you rely on it.</p>
+        </div>
+
+        <div class="card accent-teal">
+          <h3>Token</h3>
+          <p>Roughly, a small chunk of text, think part of a word. You'll mostly see this word when a tool talks about limits or pricing. You don't need to understand the mechanics, just know it's the unit these tools measure text in.</p>
+        </div>
+
+        <div class="card">
+          <h3>Chat tool</h3>
+          <p>ChatGPT, Claude, Gemini in their basic form. You ask a question, you get an answer back. Nothing happens on its own, it waits for you.</p>
+        </div>
+
+        <div class="card">
+          <h3>App builder</h3>
+          <p>Tools like Lovable. You describe what you want built (an app, a website, a tracker) in plain English, and it actually builds a working version, no coding needed from you.</p>
+        </div>
+
+        <div class="card">
+          <h3>Agent (or "Cowork-style" tool)</h3>
+          <p>The step up from chat. Instead of one question and one answer, it can carry out several steps on your behalf, over time, sometimes without you sitting there watching. Example I use myself: a scheduled task that posts a summary to my team on a set day, pulling from documents I've already given it, running even when I'm not at my desk.</p>
+        </div>
+
+        <div class="card">
+          <h3>Context</h3>
+          <p>The background information an AI tool has about you or your situation. The more relevant context you give it upfront (what you do, what you're trying to achieve, even your CV or a project brief), the less generic and more useful its answers get.</p>
+        </div>
+
+        <div class="card">
+          <h3>Model</h3>
+          <p>The actual engine doing the thinking behind a tool. You'll sometimes see version numbers or names thrown around (like different model versions inside ChatGPT). Mostly you can ignore this, the tool itself matters far more day to day than which exact model sits behind it.</p>
+        </div>
+
+      </div>
+
+      <div class="callout good">
+        <strong>The one thing worth actually remembering:</strong> start from the outcome you want, then work backward to what you type. Don't start by trying to write the "perfect" prompt, start by knowing what a good result would actually look like.
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap learn-form">
+      <h2>Heard a term that's not here?</h2>
+      <p>Tell me what confused you and I'll add it.</p>
+      <form name="learn-request" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="learn-request">
+        <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+        <input type="text" name="topic" placeholder="What term or topic?" required>
+        <input type="email" name="email" placeholder="Email (optional, if you want a reply)">
+        <button type="submit" class="btn btn-primary">Send it over</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Tech with Soph. Built by a product manager, not a marketing team. Nothing here is sponsored.</p>
+  </div>
+</footer>
+
+</body>
+</html>
