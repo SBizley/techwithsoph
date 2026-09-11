@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech with Soph: which AI tool for what</title>
+<meta name="description" content="A straight, opinionated answer to which AI tool to use for what, plus real pricing, no feature comparison chart required.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="brand"><span class="dot"></span> Tech with Soph</a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="tools.html" aria-current="page">Which tool for what</a>
+      <a href="use-cases.html">Try this today</a>
+      <a href="glossary.html">Plain-English terms</a>
+      <a href="risks.html">Risks &amp; opportunities</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" style="padding-bottom: 12px;">
+    <div class="wrap">
+      <span class="kicker">The #1 thing people ask me</span>
+      <h1>Which AI tool should you actually use?</h1>
+      <p class="lead">This was the single most-requested help topic when I asked people what they needed most, ahead of prompting tips or understanding the jargon. So here's my honest answer, not a feature chart with forty ticks and crosses.</p>
+    </div>
+  </section>
+
+  <section style="padding-top: 8px;">
+    <div class="wrap">
+      <div class="grid">
+        <div class="card accent-violet">
+          <span class="tag tag-violet">Everyday questions &amp; writing</span>
+          <h3>Use ChatGPT</h3>
+          <p>It's the one most people land on first, and it's a genuinely solid all-rounder for quick questions, drafting messages, and general writing help. If you only ever install one thing, this is the safe default.</p>
+        </div>
+        <div class="card accent-coral">
+          <span class="tag tag-coral">Anything you're building on over time</span>
+          <h3>Use Claude</h3>
+          <p>This is my own daily tool, and specifically where it wins: organising a project, coming back to something across several sessions, or working through documents. If ChatGPT is a quick chat, this is more like a colleague who remembers the project.</p>
+        </div>
+        <div class="card accent-teal">
+          <span class="tag tag-teal">You live in Gmail &amp; Google Calendar</span>
+          <h3>Use Gemini</h3>
+          <p>Its real strength is how tightly it sits inside Google's own apps, meeting notes, your inbox, your calendar. If your life already runs on Google, this is the one that plugs straight in.</p>
+        </div>
+        <div class="card">
+          <span class="tag tag-yellow">You want to build something, not just chat</span>
+          <h3>Use Lovable</h3>
+          <p>If you want an actual app, website, or tracker built and you don't want to write code, this is built exactly for that. Describe what you want in plain English and it builds a working version.</p>
+        </div>
+        <div class="card">
+          <span class="tag tag-violet">Digging through your own documents</span>
+          <h3>Use NotebookLM</h3>
+          <p>Upload your own files, research, notes, whatever, and it becomes an expert on exactly that content, with sources you can check. Genuinely underrated for anything research-heavy.</p>
+        </div>
+        <div class="card">
+          <span class="tag tag-coral">Already living in Microsoft 365</span>
+          <h3>Use Copilot</h3>
+          <p>If your work already runs on Word, Excel and Outlook, Copilot is the one that's already sitting inside them. Less exciting than the others, genuinely useful if that's your world.</p>
+        </div>
+      </div>
+
+      <div class="callout good">
+        <strong>My honest take:</strong> don't try to learn all of these at once. Pick the one that matches what you actually spend your day doing, and get properly comfortable with it before you add a second one.
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-intro">
+        <h2>What they actually cost</h2>
+        <p>Every one of these has a free tier worth starting on. Most people never need to pay for anything. Prices below are approximate as of late 2026 and do shift, worth double-checking on the day you sign up.</p>
+      </div>
+      <div class="table-wrap">
+        <table class="compare">
+          <thead>
+            <tr><th>Tool</th><th>Free tier</th><th>Cheapest paid tier</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>ChatGPT</td><td>Yes, unlimited text chat, limits on images and voice</td><td class="price">~£16/mo (Plus)</td></tr>
+            <tr><td>Claude</td><td>Yes</td><td class="price">~£16/mo (Pro)</td></tr>
+            <tr><td>Gemini</td><td>Yes</td><td class="price">~£16/mo (Google AI Pro)</td></tr>
+            <tr><td>Copilot</td><td>Yes, basic chat</td><td class="price">~£16/mo add-on to Microsoft 365</td></tr>
+            <tr><td>Lovable</td><td>Yes, ~30 credits/month</td><td class="price">From ~£20/mo</td></tr>
+            <tr><td>NotebookLM</td><td>Yes</td><td class="price">Bundled into Google AI Pro</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap learn-form">
+      <h2>Still not sure which one's right for you?</h2>
+      <p>Tell me what you're actually trying to do and I'll point you at the right one.</p>
+      <form name="learn-request" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="learn-request">
+        <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+        <input type="text" name="topic" placeholder="What are you trying to do?" required>
+        <input type="email" name="email" placeholder="Email (optional, if you want a reply)">
+        <button type="submit" class="btn btn-primary">Send it over</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Tech with Soph. Built by a product manager, not a marketing team. Nothing here is sponsored.</p>
+  </div>
+</footer>
+
+</body>
+</html>
