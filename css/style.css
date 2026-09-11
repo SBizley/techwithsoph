@@ -390,3 +390,48 @@ footer.site-footer a { color: var(--ink-soft); }
   border-color: var(--primary);
   box-shadow: 0 0 0 3px rgba(109, 40, 217, 0.25);
 }
+
+/* ---------- Brand mark (dot only, no wordmark) ---------- */
+
+.brand {
+  padding: 4px;
+  border-radius: 999px;
+}
+
+.brand .dot {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.15s ease;
+}
+
+.brand:hover .dot { transform: scale(1.2); }
+
+/* ---------- About page photo ---------- */
+
+.about-hero-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap-reverse;
+}
+
+.about-hero-row > div:first-child {
+  flex: 1 1 380px;
+}
+
+.about-photo {
+  width: 200px;
+  height: 268px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 3px solid var(--bg-card);
+  box-shadow: 0 10px 28px rgba(26, 20, 37, 0.14);
+  flex-shrink: 0;
+}
+
+/* ---------- Status tag (distinct from category tags) ---------- */
+
+.tag-muted {
+  background: var(--border);
+  color: var(--ink-soft);
+}
