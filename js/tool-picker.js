@@ -31,14 +31,14 @@ document.addEventListener('DOMContentLoaded', function () {
           result: 'chatgpt',
           reason: "It's the strongest all-rounder for quick, one-off help, and it's also my go-to recommendation for image generation."
         },
-        { label: "A project I'll come back to over time", next: 'ongoing' },
+        { label: 'An ongoing project', next: 'ongoing' },
         {
           label: 'Building something real, an app, website or tracker',
           next: 'result',
           result: 'lovable',
           reason: 'Describe what you want in plain English and it builds a working version, no coding needed from you.'
         },
-        { label: 'Staying inside tools I already use all day', next: 'daily' }
+        { label: 'Tools I already use every day', next: 'daily' }
       ]
     },
     ongoing: {

@@ -108,13 +108,13 @@
             <tr><th>Tool</th><th>Free tier</th><th>Cheapest paid tier</th></tr>
           </thead>
           <tbody>
-            <tr><td>ChatGPT</td><td>Yes, unlimited text chat, limits on images and voice</td><td class="price">~£16/mo (Plus)</td></tr>
-            <tr><td>Claude</td><td>Yes</td><td class="price">~£16/mo (Pro)</td></tr>
-            <tr><td>Gemini</td><td>Yes</td><td class="price">~£16/mo (Google AI Pro)</td></tr>
-            <tr><td>Copilot</td><td>Yes, basic chat</td><td class="price">~£16/mo add-on to Microsoft 365</td></tr>
-            <tr><td>Lovable</td><td>Yes, ~30 credits/month</td><td class="price">From ~£20/mo</td></tr>
-            <tr><td>NotebookLM</td><td>Yes</td><td class="price">Bundled into Google AI Pro</td></tr>
-            <tr><td>Perplexity</td><td>Yes</td><td class="price">~£16/mo (Pro)</td></tr>
+            <tr><td>ChatGPT</td><td>Yes, unlimited chat, limits on images and voice</td><td class="price">~£16/mo (Plus)</td></tr>
+            <tr><td>Claude</td><td>Yes, with a daily message cap</td><td class="price">~£16/mo (Pro)</td></tr>
+            <tr><td>Gemini</td><td>Yes, with usage limits on the AI features</td><td class="price">~£16/mo (Google AI Pro)</td></tr>
+            <tr><td>Copilot</td><td>Yes, basic chat only</td><td class="price">~£16/mo add-on to Microsoft 365</td></tr>
+            <tr><td>Lovable</td><td>Yes, ~30 credits a month</td><td class="price">From ~£20/mo</td></tr>
+            <tr><td>NotebookLM</td><td>Yes, with limits on notebooks and daily use</td><td class="price">Bundled into Google AI Pro</td></tr>
+            <tr><td>Perplexity</td><td>Yes, limited Pro-level searches a day</td><td class="price">~£16/mo (Pro)</td></tr>
           </tbody>
         </table>
       </div>
@@ -153,6 +153,7 @@
         <input type="email" name="email" placeholder="Email (optional, if you want a reply)">
         <button type="submit" class="btn btn-primary">Send it over</button>
       </form>
+<div class="form-status" hidden></div>
     </div>
   </section>
 
@@ -165,6 +166,8 @@
 </footer>
 
 <script src="js/tool-picker.js"></script>
+
+<script src="js/form-feedback.js"></script>
 
 <script src="js/nav-toggle.js"></script>
 

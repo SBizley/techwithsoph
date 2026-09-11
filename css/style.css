@@ -336,6 +336,19 @@ table.compare td.price {
 }
 .learn-form .btn-primary:hover { background: #b56f08; color: #fff; }
 
+.form-status {
+  margin-top: 20px;
+  padding: 16px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-left: 4px solid var(--lime);
+}
+
+.form-status.error { border-left-color: var(--coral); }
+
 /* ---------- Footer ---------- */
 
 footer.site-footer {

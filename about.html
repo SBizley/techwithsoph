@@ -77,8 +77,8 @@
 
 <section class="alt">
 <div class="wrap learn-form">
-<h2>What do you actually want help with?</h2>
-<p>Tell me what's confusing you or what you wish someone would just explain. This directly shapes what I write about next.</p>
+<h2>Got a question about any of this, or a request for the site?</h2>
+<p>Either way, tell me. I read every one of these myself, and if you leave an email I'll actually reply.</p>
 <form name="learn-request" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 <input type="hidden" name="form-name" value="learn-request">
 <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
@@ -86,6 +86,7 @@
 <input type="email" name="email" placeholder="Email (optional, if you want a reply)">
 <button type="submit" class="btn btn-primary">Send it over</button>
 </form>
+<div class="form-status" hidden></div>
 </div>
 </section>
 
@@ -96,6 +97,8 @@
 <p>Tech with Soph. Built by a product manager, not a marketing team. Nothing here is sponsored.</p>
 </div>
 </footer>
+
+<script src="js/form-feedback.js"></script>
 
 <script src="js/nav-toggle.js"></script>
 
