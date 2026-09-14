@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech with Soph: say what you mean</title>
+<meta name="description" content="The single most-requested help topic from my own research, twice over: how to actually write a prompt that gets you something useful instead of generic filler.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="brand" aria-label="Tech with Soph home"><span class="dot"></span></a>
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+    <nav class="site-nav" id="site-nav">
+      <a href="index.html">Home</a>
+      <a href="tools.html">Which tool for what</a>
+      <a href="prompting.html" aria-current="page">Say what you mean</a>
+      <a href="use-cases.html">Try this today</a>
+      <a href="glossary.html">Jargon library</a>
+      <a href="risks.html">Mind the gaps</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" style="padding-bottom: 12px;">
+    <div class="wrap">
+      <span class="kicker">The other most-requested thing</span>
+      <h1>Say what you mean</h1>
+      <p class="lead">When I asked what people needed the most help with, this beat everything else, then it turned up again anyway, buried in the answers nobody prompted for it. So here's the whole thing properly, not a rushed paragraph at the bottom of another page.</p>
+    </div>
+  </section>
+
+  <section style="padding-top: 8px;">
+    <div class="wrap">
+      <div class="section-intro">
+        <h2>Why your first go usually falls flat</h2>
+        <p>Type "write me an email" and you'll get an email. A completely generic one, the kind anyone could have written, because that's all it had to go on. It isn't reading your mind, it's reading exactly what you typed, word for word. Vague in, vague out, every single time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-intro">
+        <h2>The four things a good prompt actually needs</h2>
+        <p>Not a course, just these four. Use whichever ones are relevant, in whatever order makes sense for what you're asking.</p>
+      </div>
+      <div class="grid">
+        <div class="card accent-violet">
+          <span class="tag tag-violet">Context</span>
+          <h3>Tell it what it's working with</h3>
+          <p>Who you are, what you're trying to do, what you've already tried. "I'm a nurse writing a handover note" gets you somewhere completely different to nothing at all on the subject.</p>
+        </div>
+        <div class="card accent-coral">
+          <span class="tag tag-coral">Outcome</span>
+          <h3>Say what good actually looks like</h3>
+          <p>Not "help me plan a party", more "a party for twelve, in my flat, on a Saturday, that doesn't need me cooking on the day." The more specific the outcome, the less it has to guess.</p>
+        </div>
+        <div class="card accent-teal">
+          <span class="tag tag-teal">Format</span>
+          <h3>Tell it what shape you want back</h3>
+          <p>A list, a table, three sentences, something you could read aloud. Say nothing and you'll usually get three paragraphs whether you wanted them or not.</p>
+        </div>
+        <div class="card">
+          <span class="tag tag-yellow">Constraints</span>
+          <h3>Give it the boundaries</h3>
+          <p>A budget, a deadline, a tone, a length. "Keep it under 100 words" or "nothing over £50" does more work than another sentence of explanation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-intro">
+        <h2>Same task, two different prompts</h2>
+        <p>Same person, same email, wildly different result depending on what you actually type.</p>
+      </div>
+      <div class="card" style="margin-bottom: 8px;">
+        <h3>Asking for help with a work email</h3>
+        <p style="margin-bottom: 6px;"><strong>The vague version:</strong></p>
+        <div class="prompt-block">Write me an email to my manager about needing more time.</div>
+        <p style="margin-top: 18px; margin-bottom: 6px;"><strong>The specific version:</strong></p>
+        <div class="prompt-block">I need an email to my manager, [name], asking for an extra week on the [project] deadline. I'm behind because [real reason]. I want to sound accountable, not like I'm making excuses. Keep it under 150 words and suggest a new date.</div>
+        <p style="margin-top: 14px; color: var(--ink-soft); font-size: 0.95rem;">The first gets you something generic you'll end up rewriting anyway. The second gets you something close to what you'd actually send. Try both on the same thing and see the gap for yourself.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="callout good">
+        <strong>My honest take:</strong> you don't need to learn "prompt engineering", that's a job title, not a life skill. You just need to stop assuming it can read your mind, and actually tell it what you're picturing. More on why vague prompts trip people up in <a href="risks.html">Mind the gaps</a>.
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap learn-form">
+      <h2>Stuck on a specific prompt?</h2>
+      <p>Tell me what you're actually trying to get it to do and I'll turn it into a proper example.</p>
+      <form name="learn-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-ajax-form>
+        <input type="hidden" name="form-name" value="learn-request">
+        <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+        <input type="text" name="topic" placeholder="What are you trying to get it to do?" required>
+        <input type="email" name="email" placeholder="Email (optional, if you want a reply)">
+        <button type="submit" class="btn btn-primary">Send it over</button>
+      </form>
+<div class="form-status" hidden></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Tech with Soph. Built by a product manager, not a marketing team. Nothing here is sponsored. <a href="https://www.linkedin.com/in/sophiebizley/" target="_blank" rel="noopener">Find me on LinkedIn</a>.</p>
+  </div>
+</footer>
+
+<script src="js/form-feedback.js"></script>
+
+<script src="js/nav-toggle.js"></script>
+
+</body>
+</html>
