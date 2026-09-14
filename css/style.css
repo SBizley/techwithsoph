@@ -242,6 +242,19 @@ section.alt {
 .tag-teal { background: #DFF3F0; color: var(--teal); }
 .tag-yellow { background: #FBEACB; color: var(--yellow); }
 
+/* ---------- Card CTA link (clear "go here" affordance) ---------- */
+
+.card-link {
+  display: inline-block;
+  margin-top: auto;
+  padding-top: 10px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  text-decoration: none;
+}
+
+.card-link:hover { text-decoration: underline; }
+
 /* ---------- Tool comparison table ---------- */
 
 .table-wrap {
