@@ -2,7 +2,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tech with Soph: say what you mean</title>
+<title>Tech with Soph: prompt basics</title>
 <meta name="description" content="The single most-requested help topic from my own research, twice over: how to actually write a prompt that gets you something useful instead of generic filler.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,11 +17,11 @@
     <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
     <nav class="site-nav" id="site-nav">
       <a href="index.html">Home</a>
-      <a href="tools.html">Which tool for what</a>
-      <a href="prompting.html" aria-current="page">Say what you mean</a>
-      <a href="use-cases.html">Try this today</a>
-      <a href="glossary.html">Jargon library</a>
-      <a href="risks.html">Reality check</a>
+      <a href="tools.html">AI Tool selector</a>
+      <a href="prompting.html" aria-current="page">Prompt basics</a>
+      <a href="use-cases.html">Use cases</a>
+      <a href="glossary.html">Jargon Library</a>
+      <a href="risks.html">Watchouts</a>
       <a href="coaching.html">Coaching</a>
       <a href="about.html">About</a>
     </nav>
@@ -30,15 +30,15 @@
 
 <main>
 
-  <section class="hero" style="padding-bottom: 12px;">
+  <section class="hero hero-tight">
     <div class="wrap">
       <span class="kicker">The other most-requested thing</span>
-      <h1>Say what you mean</h1>
+      <h1>Prompt basics</h1>
       <p class="lead">When I asked what people needed the most help with, this beat everything else, then it turned up again anyway, buried in the answers nobody prompted for it. So here's the whole thing properly, not a rushed paragraph at the bottom of another page.</p>
     </div>
   </section>
 
-  <section style="padding-top: 8px;">
+  <section>
     <div class="wrap">
       <div class="section-intro">
         <h2>Why your first go usually falls flat</h2>
@@ -84,13 +84,13 @@
         <h2>Same task, two different prompts</h2>
         <p>Same person, same email, wildly different result depending on what you actually type.</p>
       </div>
-      <div class="card" style="margin-bottom: 8px;">
+      <div class="card">
         <h3>Asking for help with a work email</h3>
         <p style="margin-bottom: 6px;"><strong>The vague version:</strong></p>
         <div class="prompt-block">Write me an email to my manager about needing more time.</div>
         <p style="margin-top: 18px; margin-bottom: 6px;"><strong>The specific version:</strong></p>
         <div class="prompt-block">I need an email to my manager, [name], asking for an extra week on the [project] deadline. I'm behind because [real reason]. I want to sound accountable, not like I'm making excuses. Keep it under 150 words and suggest a new date.</div>
-        <p style="margin-top: 14px; color: var(--ink-soft); font-size: 0.95rem;">The first gets you something generic you'll end up rewriting anyway. The second gets you something close to what you'd actually send. Try both on the same thing and see the gap for yourself.</p>
+        <p class="fine-print">The first gets you something generic you'll end up rewriting anyway. The second gets you something close to what you'd actually send. Try both on the same thing and see the gap for yourself.</p>
       </div>
     </div>
   </section>
@@ -98,8 +98,50 @@
   <section class="alt">
     <div class="wrap">
       <div class="callout good">
-        <strong>My honest take:</strong> you don't need to learn "prompt engineering", that's a job title, not a life skill. You just need to stop assuming it can read your mind, and actually tell it what you're picturing. More on why vague prompts trip people up in <a href="risks.html">Reality check</a>.
+        <strong>My honest take:</strong> you don't need to learn "prompt engineering", that's a job title, not a life skill. You just need to stop assuming it can read your mind, and actually tell it what you're picturing. More on why vague prompts trip people up in <a href="risks.html">Watchouts</a>.
       </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-intro">
+        <h2>Prompt templates to copy and paste</h2>
+        <p>A few that work for almost anything, not just the examples above. Copy one, fill in the brackets, go.</p>
+      </div>
+      <div class="grid">
+        <div class="card accent-violet">
+          <span class="tag tag-violet">Tidy something up</span>
+          <h3>Turn something rough into something usable</h3>
+          <div class="prompt-block">Here's a rough version of [what you're working on]: [paste it in]. Tidy it up, keep my voice, and tell me if anything's confusing or missing.</div>
+        </div>
+        <div class="card accent-coral">
+          <span class="tag tag-coral">Understand something</span>
+          <h3>Get a straight explanation</h3>
+          <div class="prompt-block">Explain [topic or thing you don't understand] like I'm smart but new to this. No jargon, and if you have to use a technical word, explain it in the same sentence.</div>
+        </div>
+        <div class="card accent-teal">
+          <span class="tag tag-teal">Before you decide</span>
+          <h3>Check your own thinking</h3>
+          <div class="prompt-block">I'm planning to [decision or plan]. Here's my reasoning: [your reasoning]. Poke holes in it. Tell me what I'm missing or what could go wrong.</div>
+        </div>
+        <div class="card">
+          <span class="tag tag-yellow">Get started</span>
+          <h3>Get a first draft, not a lecture</h3>
+          <div class="prompt-block">Write me a first draft of [thing you need, e.g. a speech, a bio, a job description]. Here's what it needs to cover: [key points]. Keep it in my voice, not a generic version.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-intro">
+        <h2>Set your AI up once, instead of repeating yourself</h2>
+        <p>Most AI tools let you save instructions that apply to every chat, so you're not explaining who you are every time. In ChatGPT it's under Settings, then Custom instructions. In Claude it's in your Profile settings. Paste something like this in once:</p>
+      </div>
+      <div class="prompt-block">I'm [your role or context, e.g. a nurse, a small business owner, a parent going back to work after a break]. When you answer me: keep it practical, skip jargon or explain it plainly if you have to use it, keep answers as short as they can be while still being useful, and tell me clearly if something needs a real professional instead of a guess.</div>
+      <p class="fine-print">Update it whenever it stops fitting. It's not permanent, just a starting point that saves you typing the same thing every time.</p>
     </div>
   </section>
 
@@ -122,9 +164,11 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <p>Tech with Soph. Built by a product manager, not a marketing team. Nothing here is sponsored. <a href="https://www.linkedin.com/in/sophiebizley/" target="_blank" rel="noopener">Find me on LinkedIn</a>.</p>
+    <p>Tech with Soph. Built by a product manager, not a marketing team. Nothing here is sponsored. Find me on <a href="https://www.linkedin.com/in/sophiebizley/" target="_blank" rel="noopener">LinkedIn</a>, <a href="https://www.instagram.com/techwithsoph/" target="_blank" rel="noopener">Instagram</a>, or <a href="https://substack.com/@techwithsoph" target="_blank" rel="noopener">the newsletter</a>.</p>
   </div>
 </footer>
+
+<script src="js/copy-prompt.js"></script>
 
 <script src="js/form-feedback.js"></script>
 

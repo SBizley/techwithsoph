@@ -17,11 +17,11 @@
     <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
     <nav class="site-nav" id="site-nav">
       <a href="index.html">Home</a>
-      <a href="tools.html">Which tool for what</a>
-      <a href="prompting.html">Say what you mean</a>
-      <a href="use-cases.html" aria-current="page">Try this today</a>
-      <a href="glossary.html">Jargon library</a>
-      <a href="risks.html">Reality check</a>
+      <a href="tools.html">AI Tool selector</a>
+      <a href="prompting.html">Prompt basics</a>
+      <a href="use-cases.html" aria-current="page">Use cases</a>
+      <a href="glossary.html">Jargon Library</a>
+      <a href="risks.html">Watchouts</a>
       <a href="coaching.html">Coaching</a>
       <a href="about.html">About</a>
     </nav>
@@ -30,113 +30,115 @@
 
 <main>
 
-  <section class="hero" style="padding-bottom: 12px;">
+  <section class="hero hero-tight">
     <div class="wrap">
       <span class="kicker">Pick one, try it now</span>
-      <h1>Nine real things to try today</h1>
+      <h1>Real use cases that save me time</h1>
       <p class="lead">Not ten tips, not a course. One real task, done properly, teaches you more than a week of reading about AI. Pick whichever of these matches something you're actually dealing with, copy the prompt, swap in your own details, and see what comes back.</p>
-    </div>
-  </section>
-
-  <section style="padding-top: 8px;">
-    <div class="wrap">
-
-      <div class="card accent-violet" style="margin-bottom: 24px;">
-        <span class="tag tag-violet">Travel &amp; events</span>
-        <h3>Plan a trip when you don't know where to start</h3>
-        <p>This is the one I used on my own mum, she wanted to plan a trip and had no idea where to begin. Give it a destination, some dates, and a budget, and it'll build you an actual day-by-day plan you can adjust.</p>
-        <div class="prompt-block">I'm planning a trip to [destination] for [number] days in [month]. My budget is roughly [amount]. I'm travelling with [who]. Build me a day-by-day itinerary with a mix of the big must-see things and some quieter local spots, and flag anything that needs booking in advance.</div>
-        <div class="prompt-block">I've got a rough plan for [destination] already: [paste what you have, even if it's messy]. Look at it and tell me what's missing, what's overambitious for the time I've got, and what order actually makes sense given the locations.</div>
-      </div>
-
-      <div class="card accent-coral" style="margin-bottom: 24px;">
-        <span class="tag tag-coral">Money</span>
-        <h3>Get on top of your finances using your own numbers</h3>
-        <p>Not generic budgeting advice, your actual numbers. Export a bank statement or just list out what you spend, and ask it to build you something you can actually use and come back to.</p>
-        <div class="prompt-block">Here's what I spend in a typical month: [list your income and outgoings, or paste a bank statement export]. Build me a simple monthly budget, tell me where the money's actually going, and suggest where I could realistically cut back without me having to give up everything I enjoy.</div>
-        <div class="prompt-block">I want to save [amount] for [goal] by [date]. Based on what I've told you about my spending, work out what I'd need to save each month to hit that, and tell me honestly whether it's realistic.</div>
-        <p style="margin-top: 14px; color: var(--ink-soft); font-size: 0.95rem;">Worth knowing: don't paste in full account numbers or sort codes, you don't need them for this and it's just not necessary information to hand over. See <a href="risks.html">Reality check</a> for more on this.</p>
-      </div>
-
-      <div class="card accent-teal" style="margin-bottom: 24px;">
-        <span class="tag tag-teal">Work &amp; life admin</span>
-        <h3>Draft the email you're avoiding</h3>
-        <p>Everyone has one. A message that needs the right tone and you keep putting off because you don't know how to phrase it.</p>
-        <div class="prompt-block">I need to write an email to [who] about [what's happening]. I want to come across as [e.g. firm but fair / apologetic but clear / friendly but professional]. Here's roughly what I want to say: [your rough notes, doesn't need to be polished]. Write me a draft, and keep it short, nobody wants to read three paragraphs.</div>
-      </div>
-
-      <div class="card" style="margin-bottom: 24px;">
-        <span class="tag tag-yellow">Start here if nothing else</span>
-        <h3>Automate one thing you do by hand every week</h3>
-        <p>This is my one piece of advice, repeated because it matters: don't try to use AI for everything at once. Find one repetitive thing you do manually and hand it over.</p>
-        <div class="prompt-block">Every week I have to [describe the repetitive task, e.g. "write a summary of what happened for my team" or "go through receipts and work out what to claim back"]. Here's what that usually involves: [describe your current process]. Suggest a simpler way to do this, and if it's something you can help me build (like a template, a checklist, or a small tracker), build it with me now.</div>
-      </div>
-
-      <div class="card" style="margin-bottom: 24px;">
-        <span class="tag tag-violet">Big decisions</span>
-        <h3>Make sense of a big life-admin decision</h3>
-        <p>A move, a mortgage, a big purchase, the kind of decision where you don't even know what questions to ask yet.</p>
-        <div class="prompt-block">I'm trying to decide whether to [describe the decision, e.g. "remortgage now or wait", "buy or lease a car", "move to a new area"]. Here's what I know so far: [your situation and any numbers you have]. Don't just give me an answer, tell me what questions I should actually be asking, and what I'd need to find out before I could decide properly.</div>
-        <p style="margin-top: 14px; color: var(--ink-soft); font-size: 0.95rem;">Use this to get organised and ask better questions, not as a replacement for real financial or legal advice on anything big. More on that in <a href="risks.html">Reality check</a>.</p>
-      </div>
-
-      <div class="card" style="margin-bottom: 24px;">
-        <span class="tag tag-coral">Work &amp; career</span>
-        <h3>Get help with your CV or a job application</h3>
-        <p>You know what you've actually done, you just don't always know how to make it read well on paper. This is where that gap closes fastest.</p>
-        <div class="prompt-block">Here's my current CV: [paste it in, or describe your work history]. I'm applying for [role or type of job]. Rewrite it to actually highlight what's relevant to this role, cut anything that isn't pulling its weight, and flag anything that reads vague or like corporate filler.</div>
-      </div>
-
-      <div class="card" style="margin-bottom: 24px;">
-        <span class="tag tag-teal">Small print</span>
-        <h3>Make sense of a document you don't want to read properly</h3>
-        <p>A tenancy agreement, an insurance policy, terms and conditions, the kind of document that's technically in English but doesn't feel like it.</p>
-        <div class="prompt-block">Here's a document I need to actually understand: [paste the text, or the key sections]. Explain what it actually means in plain English, flag anything unusual or worth double-checking, and tell me what questions I should ask before I sign or agree to anything.</div>
-        <p style="margin-top: 14px; color: var(--ink-soft); font-size: 0.95rem;">Use this to understand what you're looking at, not as a replacement for real legal advice on anything that matters. More on that in <a href="risks.html">Reality check</a>.</p>
-      </div>
-
-      <div class="card" style="margin-bottom: 24px;">
-        <span class="tag tag-yellow">Hard conversations</span>
-        <h3>Prepare for a conversation you keep putting off</h3>
-        <p>A difficult chat with your manager, a disagreement with a friend, telling someone something they won't want to hear. Rehearsing it in your head isn't the same as having an actual plan.</p>
-        <div class="prompt-block">I need to have a conversation with [who] about [what's going on]. Here's the situation: [describe it honestly, including how you're feeling about it]. Help me think through how to open it, what I actually want to get out of it, and how to stay calm if it doesn't go the way I hope.</div>
-      </div>
-
-      <div class="card" style="margin-bottom: 8px;">
-        <span class="tag tag-violet">Events &amp; admin</span>
-        <h3>Organise a get-together without the last-minute scramble</h3>
-        <p>The bit nobody explains: not just what to buy or book, but the order to do it in, and what's genuinely optional versus what'll bite you if you leave it too late.</p>
-        <div class="prompt-block">I'm organising [event, e.g. a birthday, a leaving do, a family get-together] for [number] people on [date]. Here's what I know so far: [venue, budget, any must-haves]. Build me a checklist of everything that needs sorting and by when, and flag what I'm probably forgetting.</div>
-      </div>
-
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <div class="section-intro">
-        <h2>From the community</h2>
-        <p>Real use cases other readers have actually tried, not case studies I made up. Send yours in below, and if it's genuinely useful, it goes up here, with your name on it or anonymous, your call.</p>
-      </div>
-      <div class="callout">
-        <strong>Nothing here yet.</strong> This section only just went up, be the first one in it.
-      </div>
-    </div>
-  </section>
 
-  <section class="alt">
-    <div class="wrap learn-form">
-      <h2>Got a use case worth sharing?</h2>
-      <p>Tell me what you actually used AI for and roughly how you did it. I read every one of these myself.</p>
-      <form name="community-submission" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-ajax-form>
-        <input type="hidden" name="form-name" value="community-submission">
-        <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
-        <input type="text" name="use_case" placeholder="What did you use AI for?" required>
-        <input type="text" name="display_name" placeholder="Name, or 'anonymous', your call">
-        <input type="email" name="email" placeholder="Email (optional, if you want a reply)">
-        <button type="submit" class="btn btn-primary">Send it over</button>
-      </form>
-      <div class="form-status" hidden></div>
+      <div class="card-stack">
+      <div class="card accent-violet">
+        <span class="tag tag-violet">Travel &amp; events</span>
+        <h3><button type="button" class="usecase-toggle" aria-expanded="true" aria-controls="usecase-travel-amp-events-body">Plan a trip when you don't know where to start<span class="usecase-chevron" aria-hidden="true">&#9662;</span></button></h3>
+        <p>This is the one I used on my own mum, she wanted to plan a trip and had no idea where to begin. Give it a destination, some dates, and a budget, and it'll build you an actual day-by-day plan you can adjust.</p>
+        <div class="usecase-body" id="usecase-travel-amp-events-body">
+        <div class="prompt-block">I'm planning a trip to [destination] for [number] days in [month]. My budget is roughly [amount]. I'm travelling with [who]. Build me a day-by-day itinerary with a mix of the big must-see things and some quieter local spots, and flag anything that needs booking in advance.</div>
+        <div class="prompt-block">I've got a rough plan for [destination] already: [paste what you have, even if it's messy]. Look at it and tell me what's missing, what's overambitious for the time I've got, and what order actually makes sense given the locations.</div>
+        </div>
+      </div>
+
+      <div class="card accent-coral">
+        <span class="tag tag-coral">Money</span>
+        <h3><button type="button" class="usecase-toggle" aria-expanded="false" aria-controls="usecase-money-body">Get on top of your finances using your own numbers<span class="usecase-chevron" aria-hidden="true">&#9662;</span></button></h3>
+        <p>Not generic budgeting advice, your actual numbers. Export a bank statement or just list out what you spend, and ask it to build you something you can actually use and come back to.</p>
+        <div class="usecase-body" id="usecase-money-body" hidden>
+        <div class="prompt-block">Here's what I spend in a typical month: [list your income and outgoings, or paste a bank statement export]. Build me a simple monthly budget, tell me where the money's actually going, and suggest where I could realistically cut back without me having to give up everything I enjoy.</div>
+        <div class="prompt-block">I want to save [amount] for [goal] by [date]. Based on what I've told you about my spending, work out what I'd need to save each month to hit that, and tell me honestly whether it's realistic.</div>
+        <p class="fine-print">Worth knowing: don't paste in full account numbers or sort codes, you don't need them for this and it's just not necessary information to hand over. See <a href="risks.html">Watchouts</a> for more on this.</p>
+        </div>
+      </div>
+
+      <div class="card accent-teal">
+        <span class="tag tag-teal">Work &amp; life admin</span>
+        <h3><button type="button" class="usecase-toggle" aria-expanded="false" aria-controls="usecase-work-amp-life-admin-body">Draft the email you're avoiding<span class="usecase-chevron" aria-hidden="true">&#9662;</span></button></h3>
+        <p>Everyone has one. A message that needs the right tone and you keep putting off because you don't know how to phrase it.</p>
+        <div class="usecase-body" id="usecase-work-amp-life-admin-body" hidden>
+        <div class="prompt-block">I need to write an email to [who] about [what's happening]. I want to come across as [e.g. firm but fair / apologetic but clear / friendly but professional]. Here's roughly what I want to say: [your rough notes, doesn't need to be polished]. Write me a draft, and keep it short, nobody wants to read three paragraphs.</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="tag tag-yellow">Start here if nothing else</span>
+        <h3><button type="button" class="usecase-toggle" aria-expanded="false" aria-controls="usecase-start-here-if-nothing-else-body">Automate one thing you do by hand every week<span class="usecase-chevron" aria-hidden="true">&#9662;</span></button></h3>
+        <p>This is my one piece of advice, repeated because it matters: don't try to use AI for everything at once. Find one repetitive thing you do manually and hand it over.</p>
+        <div class="usecase-body" id="usecase-start-here-if-nothing-else-body" hidden>
+        <div class="prompt-block">Every week I have to [describe the repetitive task, e.g. "write a summary of what happened for my team" or "go through receipts and work out what to claim back"]. Here's what that usually involves: [describe your current process]. Suggest a simpler way to do this, and if it's something you can help me build (like a template, a checklist, or a small tracker), build it with me now.</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="tag tag-violet">Big decisions</span>
+        <h3><button type="button" class="usecase-toggle" aria-expanded="false" aria-controls="usecase-big-decisions-body">Make sense of a big life-admin decision<span class="usecase-chevron" aria-hidden="true">&#9662;</span></button></h3>
+        <p>A move, a mortgage, a big purchase, the kind of decision where you don't even know what questions to ask yet.</p>
+        <div class="usecase-body" id="usecase-big-decisions-body" hidden>
+        <div class="prompt-block">I'm trying to decide whether to [describe the decision, e.g. "remortgage now or wait", "buy or lease a car", "move to a new area"]. Here's what I know so far: [your situation and any numbers you have]. Don't just give me an answer, tell me what questions I should actually be asking, and what I'd need to find out before I could decide properly.</div>
+        <p class="fine-print">Use this to get organised and ask better questions, not as a replacement for real financial or legal advice on anything big. More on that in <a href="risks.html">Watchouts</a>.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="tag tag-coral">Work &amp; career</span>
+        <h3><button type="button" class="usecase-toggle" aria-expanded="false" aria-controls="usecase-work-amp-career-body">Get help with your CV or a job application<span class="usecase-chevron" aria-hidden="true">&#9662;</span></button></h3>
+        <p>You know what you've actually done, you just don't always know how to make it read well on paper. This is where that gap closes fastest.</p>
+        <div class="usecase-body" id="usecase-work-amp-career-body" hidden>
+        <div class="prompt-block">Here's my current CV: [paste it in, or describe your work history]. I'm applying for [role or type of job]. Rewrite it to actually highlight what's relevant to this role, cut anything that isn't pulling its weight, and flag anything that reads vague or like corporate filler.</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="tag tag-teal">Small print</span>
+        <h3><button type="button" class="usecase-toggle" aria-expanded="false" aria-controls="usecase-small-print-body">Make sense of a document you don't want to read properly<span class="usecase-chevron" aria-hidden="true">&#9662;</span></button></h3>
+        <p>A tenancy agreement, an insurance policy, terms and conditions, the kind of document that's technically in English but doesn't feel like it.</p>
+        <div class="usecase-body" id="usecase-small-print-body" hidden>
+        <div class="prompt-block">Here's a document I need to actually understand: [paste the text, or the key sections]. Explain what it actually means in plain English, flag anything unusual or worth double-checking, and tell me what questions I should ask before I sign or agree to anything.</div>
+        <p class="fine-print">Use this to understand what you're looking at, not as a replacement for real legal advice on anything that matters. More on that in <a href="risks.html">Watchouts</a>.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="tag tag-yellow">Hard conversations</span>
+        <h3><button type="button" class="usecase-toggle" aria-expanded="false" aria-controls="usecase-hard-conversations-body">Prepare for a conversation you keep putting off<span class="usecase-chevron" aria-hidden="true">&#9662;</span></button></h3>
+        <p>A difficult chat with your manager, a disagreement with a friend, telling someone something they won't want to hear. Rehearsing it in your head isn't the same as having an actual plan.</p>
+        <div class="usecase-body" id="usecase-hard-conversations-body" hidden>
+        <div class="prompt-block">I need to have a conversation with [who] about [what's going on]. Here's the situation: [describe it honestly, including how you're feeling about it]. Help me think through how to open it, what I actually want to get out of it, and how to stay calm if it doesn't go the way I hope.</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="tag tag-violet">Events &amp; admin</span>
+        <h3><button type="button" class="usecase-toggle" aria-expanded="false" aria-controls="usecase-events-amp-admin-body">Organise a get-together without the last-minute scramble<span class="usecase-chevron" aria-hidden="true">&#9662;</span></button></h3>
+        <p>The bit nobody explains: not just what to buy or book, but the order to do it in, and what's genuinely optional versus what'll bite you if you leave it too late.</p>
+        <div class="usecase-body" id="usecase-events-amp-admin-body" hidden>
+        <div class="prompt-block">I'm organising [event, e.g. a birthday, a leaving do, a family get-together] for [number] people on [date]. Here's what I know so far: [venue, budget, any must-haves]. Build me a checklist of everything that needs sorting and by when, and flag what I'm probably forgetting.</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="tag tag-teal">Retirement</span>
+        <h3><button type="button" class="usecase-toggle" aria-expanded="false" aria-controls="usecase-retirement-body">Model your retirement and investments<span class="usecase-chevron" aria-hidden="true">&#9662;</span></button></h3>
+        <p>This is one I've personally used, to work out the money I need for retirement, visualise my investments and understand different saving scenarios.</p>
+        <div class="usecase-body" id="usecase-retirement-body" hidden>
+        <div class="prompt-block">I'm [age] and want to retire around [target age] with roughly [income or lifestyle] a year to live on. I currently have [pension/investment balances] and I'm putting away [contribution amount] a month. Model out where that gets me by [target age], then show me two or three alternative scenarios if I saved [different amount] a month instead. Be upfront about the assumptions you're making (growth rate, inflation), and flag anything that makes the numbers shaky.</div>
+        <p class="fine-print">Worth knowing: don't paste in full account numbers, and treat what comes back as a way to understand your own numbers and ask sharper questions, not as a replacement for regulated financial advice, especially before you actually change anything. More on that in <a href="risks.html">Watchouts</a>.</p>
+        </div>
+      </div>
+      </div>
+
     </div>
   </section>
 
@@ -159,9 +161,13 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <p>Tech with Soph. Built by a product manager, not a marketing team. Nothing here is sponsored. <a href="https://www.linkedin.com/in/sophiebizley/" target="_blank" rel="noopener">Find me on LinkedIn</a>.</p>
+    <p>Tech with Soph. Built by a product manager, not a marketing team. Nothing here is sponsored. Find me on <a href="https://www.linkedin.com/in/sophiebizley/" target="_blank" rel="noopener">LinkedIn</a>, <a href="https://www.instagram.com/techwithsoph/" target="_blank" rel="noopener">Instagram</a>, or <a href="https://substack.com/@techwithsoph" target="_blank" rel="noopener">the newsletter</a>.</p>
   </div>
 </footer>
+
+<script src="js/use-case-toggle.js"></script>
+
+<script src="js/copy-prompt.js"></script>
 
 <script src="js/form-feedback.js"></script>
 
