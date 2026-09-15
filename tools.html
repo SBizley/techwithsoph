@@ -43,52 +43,37 @@
 
       <div class="section-intro">
         <h2>What are you actually trying to do?</h2>
-        <p>Answer a couple of quick questions and I'll point you at the right one, or skip it and scroll through all six yourself.</p>
+        <p>Seven of them below, with an honest take on each one. Find the one that matches what you're actually trying to do.</p>
       </div>
 
-      <div class="quiz" id="tool-quiz" aria-live="polite">
-        <div class="quiz-progress" id="quiz-progress" aria-hidden="true">
-          <span class="quiz-dot"></span>
-          <span class="quiz-dot"></span>
+      <div class="term-list">
+        <div class="term-row" id="tool-chatgpt">
+          <div class="term-name"><span class="tag tag-violet">Everyday questions</span><br>Use ChatGPT</div>
+          <div class="term-def">It's the one most people land on first, and a genuinely solid all-rounder for quick questions and everyday writing. It's also my go-to recommendation for image generation, and the safe default if you only ever install one thing.</div>
         </div>
-        <div id="quiz-body"></div>
-      </div>
-
-      <div class="grid">
-        <div class="card" id="tool-chatgpt">
-          <span class="tag tag-violet">Everyday questions</span>
-          <h3>Use ChatGPT</h3>
-          <p>It's the one most people land on first, and a genuinely solid all-rounder for quick questions and everyday writing. It's also my go-to recommendation for image generation, and the safe default if you only ever install one thing.</p>
+        <div class="term-row" id="tool-claude">
+          <div class="term-name"><span class="tag tag-coral">Ongoing projects</span><br>Use Claude</div>
+          <div class="term-def">This is my own daily tool, and specifically where it wins: organising a project, coming back to something across several sessions, or working through documents. If ChatGPT is a quick chat, this is more like a colleague who remembers the project.</div>
         </div>
-        <div class="card" id="tool-claude">
-          <span class="tag tag-coral">Ongoing projects</span>
-          <h3>Use Claude</h3>
-          <p>This is my own daily tool, and specifically where it wins: organising a project, coming back to something across several sessions, or working through documents. If ChatGPT is a quick chat, this is more like a colleague who remembers the project.</p>
+        <div class="term-row" id="tool-gemini">
+          <div class="term-name"><span class="tag tag-teal">Lives in Google</span><br>Use Gemini</div>
+          <div class="term-def">Its real strength is how tightly it sits inside Google's own apps, meeting notes, your inbox, your calendar. If your life already runs on Google, this is the one that plugs straight in.</div>
         </div>
-        <div class="card" id="tool-gemini">
-          <span class="tag tag-teal">Lives in Google</span>
-          <h3>Use Gemini</h3>
-          <p>Its real strength is how tightly it sits inside Google's own apps, meeting notes, your inbox, your calendar. If your life already runs on Google, this is the one that plugs straight in.</p>
+        <div class="term-row" id="tool-lovable">
+          <div class="term-name"><span class="tag tag-yellow">No-code building</span><br>Use Lovable</div>
+          <div class="term-def">If you want an actual app, website, or tracker built and you don't want to write code, this is built exactly for that. Describe what you want in plain English and it builds a working version.</div>
         </div>
-        <div class="card" id="tool-lovable">
-          <span class="tag tag-yellow">No-code building</span>
-          <h3>Use Lovable</h3>
-          <p>If you want an actual app, website, or tracker built and you don't want to write code, this is built exactly for that. Describe what you want in plain English and it builds a working version.</p>
+        <div class="term-row" id="tool-notebooklm">
+          <div class="term-name"><span class="tag tag-violet">Your own documents</span><br>Use NotebookLM</div>
+          <div class="term-def">Upload your own files, research, notes, whatever, and it becomes an expert on exactly that content, with sources you can check. Genuinely underrated for anything research-heavy.</div>
         </div>
-        <div class="card" id="tool-notebooklm">
-          <span class="tag tag-violet">Your own documents</span>
-          <h3>Use NotebookLM</h3>
-          <p>Upload your own files, research, notes, whatever, and it becomes an expert on exactly that content, with sources you can check. Genuinely underrated for anything research-heavy.</p>
+        <div class="term-row" id="tool-perplexity">
+          <div class="term-name"><span class="tag tag-teal">Web research, cited</span><br>Use Perplexity</div>
+          <div class="term-def">It searches the web and reads the results for you, then gives you an actual answer with the sources clickable underneath so you can check it yourself. Better than a normal search engine for anything where you'd otherwise open ten tabs.</div>
         </div>
-        <div class="card" id="tool-perplexity">
-          <span class="tag tag-teal">Web research, cited</span>
-          <h3>Use Perplexity</h3>
-          <p>It searches the web and reads the results for you, then gives you an actual answer with the sources clickable underneath so you can check it yourself. Better than a normal search engine for anything where you'd otherwise open ten tabs.</p>
-        </div>
-        <div class="card" id="tool-copilot">
-          <span class="tag tag-coral">Microsoft 365</span>
-          <h3>Use Copilot</h3>
-          <p>If your work already runs on Word, Excel and Outlook, Copilot is the one that's already sitting inside them. Less exciting than the others, genuinely useful if that's your world.</p>
+        <div class="term-row" id="tool-copilot">
+          <div class="term-name"><span class="tag tag-coral">Microsoft 365</span><br>Use Copilot</div>
+          <div class="term-def">If your work already runs on Word, Excel and Outlook, Copilot is the one that's already sitting inside them. Less exciting than the others, genuinely useful if that's your world.</div>
         </div>
       </div>
 
@@ -132,16 +117,14 @@
         <h2>Want to go further?</h2>
         <p>These two are a level up from everything else on this page, proper coding tools rather than something you need on day one. Worth knowing about once the basics feel easy and you're curious what's next, not before.</p>
       </div>
-      <div class="grid">
-        <div class="card" id="tool-cursor">
-          <span class="tag tag-muted">Advanced</span>
-          <h3>Use Cursor</h3>
-          <p>A proper code editor with AI built in, not a chat window bolted onto the side. If you've built something in Lovable and you're ready to actually open and understand the code behind it, this is usually where people go next.</p>
+      <div class="term-list">
+        <div class="term-row" id="tool-cursor">
+          <div class="term-name"><span class="tag tag-muted">Advanced</span><br>Use Cursor</div>
+          <div class="term-def">A proper code editor with AI built in, not a chat window bolted onto the side. If you've built something in Lovable and you're ready to actually open and understand the code behind it, this is usually where people go next.</div>
         </div>
-        <div class="card" id="tool-claude-code">
-          <span class="tag tag-muted">Advanced</span>
-          <h3>Use Claude Code</h3>
-          <p>The command-line version of Claude, built for writing and shipping real code rather than chatting about it. This entire site was built with it, sat inside the folder on my computer making the actual file changes. It's usually covered by a normal Claude subscription, no separate sign-up.</p>
+        <div class="term-row" id="tool-claude-code">
+          <div class="term-name"><span class="tag tag-muted">Advanced</span><br>Use Claude Code</div>
+          <div class="term-def">The command-line version of Claude, built for writing and shipping real code rather than chatting about it. This entire site was built with it, sat inside the folder on my computer making the actual file changes. It's usually covered by a normal Claude subscription, no separate sign-up.</div>
         </div>
       </div>
     </div>
@@ -169,8 +152,6 @@
     <p>Tech with Soph. Built by a product manager, not a marketing team. Nothing here is sponsored. Find me on <a href="https://www.linkedin.com/in/sophiebizley/" target="_blank" rel="noopener">LinkedIn</a>, <a href="https://www.instagram.com/techwithsoph/" target="_blank" rel="noopener">Instagram</a>, or <a href="https://substack.com/@techwithsoph" target="_blank" rel="noopener">the newsletter</a>.</p>
   </div>
 </footer>
-
-<script src="js/tool-picker.js"></script>
 
 <script src="js/form-feedback.js"></script>
 
