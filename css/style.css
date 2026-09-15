@@ -694,3 +694,32 @@ footer.site-footer a { color: var(--ink-soft); }
     padding: 18px 0;
   }
 }
+
+/* ---------- Layout utility: hero immediately followed by content ---------- */
+
+.hero-tight { padding-bottom: 12px; }
+.hero-tight + section { padding-top: 8px; }
+
+/* ---------- Fine print note (small muted follow-up line) ---------- */
+
+.fine-print {
+  margin-top: 14px;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+/* ---------- Stacked cards/callouts outside a .grid ---------- */
+
+.card-stack > .card {
+  margin-bottom: 24px;
+}
+.card-stack > .card:last-child {
+  margin-bottom: 0;
+}
+
+.callout-stack > .callout {
+  margin-bottom: 20px;
+}
+.callout-stack > .callout:last-child {
+  margin-bottom: 0;
+}
