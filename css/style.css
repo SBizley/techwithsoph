@@ -242,6 +242,7 @@ section.alt {
 
 .tag {
   display: inline-block;
+  align-self: flex-start;
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 0.78rem;
   font-weight: 700;
@@ -260,6 +261,44 @@ section.alt {
 .tag-coral { background: #FCE4E9; color: var(--coral); }
 .tag-teal { background: #DFF3F0; color: var(--teal); }
 .tag-yellow { background: #FBEACB; color: var(--yellow); }
+
+/* ---------- Use case accordion toggle ---------- */
+
+.usecase-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  font: inherit;
+  font-family: 'Unbounded', 'Inter', sans-serif;
+  font-weight: 600;
+  color: var(--ink);
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.usecase-toggle:hover,
+.usecase-toggle:focus-visible { color: var(--primary-dark); }
+
+.usecase-chevron {
+  flex-shrink: 0;
+  display: inline-block;
+  color: var(--ink-soft);
+  transition: transform 0.2s ease;
+}
+
+.usecase-toggle[aria-expanded="true"] .usecase-chevron {
+  transform: rotate(180deg);
+}
+
+.usecase-body {
+  margin-top: 4px;
+}
 
 /* ---------- Card CTA link (clear "go here" affordance) ---------- */
 
@@ -340,12 +379,26 @@ table.compare td.price {
   font-weight: 700;
   letter-spacing: 0.02em;
   cursor: pointer;
-  transition: background 0.15s ease, border-color 0.15s ease;
+  opacity: 0;
+  transition: opacity 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+/* Visible on hover/keyboard focus, and always visible on touch devices
+   (no hover to reveal it on) so it never disappears on mobile. */
+.prompt-block:hover .prompt-copy-btn,
+.prompt-block:focus-within .prompt-copy-btn,
+.prompt-copy-btn:focus-visible {
+  opacity: 1;
+}
+
+@media (hover: none) {
+  .prompt-copy-btn { opacity: 1; }
 }
 
 .prompt-copy-btn:hover { background: rgba(255, 255, 255, 0.22); }
 
 .prompt-copy-btn.copied {
+  opacity: 1;
   background: var(--lime);
   color: var(--ink);
   border-color: var(--lime);
@@ -440,7 +493,7 @@ footer.site-footer a { color: var(--ink-soft); }
 
 .brand:hover .dot { transform: scale(1.2); }
 
-/* ---------- About page photo ---------- */
+/* ---------- Hero photo row (About, Coaching) ---------- */
 
 .about-hero-row {
   display: flex;
