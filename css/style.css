@@ -247,7 +247,9 @@ section.alt {
 }
 
 .tag {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   align-self: flex-start;
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 0.78rem;
@@ -259,7 +261,9 @@ section.alt {
   border-radius: 999px;
   margin-bottom: 10px;
   /* reserves space for a two-line label so cards in the same row keep
-     their headings aligned, whether the tag wraps or not */
+     their headings aligned, whether the tag wraps or not. inline-flex
+     + align-items:center keeps single-line labels vertically centred
+     instead of stranded at the top of that reserved height. */
   min-height: 2.6em;
 }
 
