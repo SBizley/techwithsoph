@@ -80,26 +80,12 @@
 
   <section class="alt">
     <div class="wrap">
-      <div class="section-intro">
+      <div class="editorial">
         <h2>Why I still think it's worth it</h2>
-      </div>
-
-      <div class="grid">
-        <div class="card accent-teal">
-          <span class="tag tag-teal">Time</span>
-          <h3>One task, done properly, saves hours</h3>
-          <p>Not "AI will change your life." More specifically: the one repetitive thing you hand over properly, planning a trip, sorting a budget, drafting the emails you avoid, gives back real hours you'd have spent doing it manually.</p>
-        </div>
-        <div class="card accent-violet">
-          <span class="tag tag-violet">Fairness</span>
-          <h3>It's a genuine equaliser</h3>
-          <p>You don't need a team, a budget, or a technical background to get real help with a project, a business idea, or a big decision. That access didn't really exist five years ago in this form.</p>
-        </div>
-        <div class="card accent-coral">
-          <span class="tag tag-coral">Confidence</span>
-          <h3>It transfers faster than you'd think</h3>
-          <p>Getting properly comfortable with one tool, one real task, tends to make the next one far less intimidating. The hard part is the first one, not the tenth.</p>
-        </div>
+        <p>Not "AI will change your life." More specifically: the one repetitive thing you hand over properly, planning a trip, sorting a budget, drafting the emails you avoid, gives back real hours you'd have spent doing it manually.</p>
+        <p class="pull">You don't need a team, a budget, or a technical background to get real help with a project, a business idea, or a big decision.</p>
+        <p>That kind of access didn't really exist five years ago. It's a genuine equaliser.</p>
+        <p>And it transfers faster than you'd think. Getting properly comfortable with one tool, one real task, tends to make the next one far less intimidating. The hard part is the first one, not the tenth.</p>
       </div>
     </div>
   </section>
@@ -118,6 +104,7 @@
       <p>Tell me what's actually on your mind and I'll give you a straight answer.</p>
       <form name="learn-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-ajax-form>
         <input type="hidden" name="form-name" value="learn-request">
+        <input type="hidden" name="source" value="risks">
         <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
         <input type="text" name="topic" placeholder="What's worrying you?" required>
         <input type="email" name="email" placeholder="Email (optional, if you want a reply)">

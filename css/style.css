@@ -168,16 +168,22 @@ nav.site-nav a[aria-current="page"] {
 }
 
 .hero .kicker {
-  display: inline-block;
-  background: var(--lime);
-  color: var(--ink);
-  font-weight: 700;
-  font-size: 0.85rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  padding: 6px 14px;
-  border-radius: 999px;
-  margin-bottom: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--ink-soft);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 0 0 20px;
+}
+
+.hero .kicker::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--coral);
+  flex-shrink: 0;
 }
 
 .hero p.lead {
@@ -616,6 +622,71 @@ footer.site-footer a { color: var(--ink-soft); }
   .term-row {
     grid-template-columns: 1fr;
     gap: 6px;
+    padding: 18px 0;
+  }
+}
+
+/* ---------- Editorial prose block (replaces card-grid for a running
+   argument rather than a set of parallel options) ---------- */
+
+.editorial {
+  max-width: 680px;
+}
+
+.editorial p { color: var(--ink-soft); }
+
+.editorial p.pull {
+  font-family: 'Unbounded', 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: var(--primary-dark);
+  margin: 28px 0;
+}
+
+/* ---------- Path list (label + description/link row, for genuinely
+   parallel options: reuses the term-list rhythm site-wide) ---------- */
+
+.path-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--border);
+}
+
+.path-row {
+  display: grid;
+  grid-template-columns: minmax(220px, 360px) 1fr;
+  gap: 28px;
+  padding: 26px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.path-prompt {
+  font-family: 'Unbounded', 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--ink);
+  margin: 0;
+}
+
+.path-body p {
+  color: var(--ink-soft);
+  margin: 0 0 10px;
+}
+
+.path-link {
+  font-weight: 700;
+  color: var(--primary-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.path-link:hover { color: var(--primary); }
+
+@media (max-width: 620px) {
+  .path-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
     padding: 18px 0;
   }
 }
