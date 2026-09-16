@@ -1,14 +1,19 @@
 /* ============================================
    Tech with Soph: shared styles
-   Warm cream base with a disciplined accent
-   system: one accent colour does the work per
-   moment (violet leads), instead of every colour
-   firing at once. Unbounded for headings, Inter
-   for body. Calibrated 2026-09-14 after this felt
-   busier than it needed to next to the portfolio
-   site: gradient headline replaced with a solid
-   colour, nav hover softened from a solid pill to
-   an underline, hero given more room to breathe.
+   Violet-led identity, restrained on purpose:
+   violet is the one brand colour (buttons, links,
+   nav, hero), teal and coral only ever rotate as a
+   scannability legend inside a single list of
+   sibling items (never a fixed site-wide meaning),
+   and a neutral grey tag marks the odd one out
+   (advanced, sycophancy). No more than three tag
+   colours on any page. Space Grotesk for display
+   headings (tighter, more confident than the old
+   Unbounded), Inter for body. Rebranded 2026-09-16
+   after the "keep the violet, drop the rainbow"
+   call, inspired by how Wise and Monzo spend one
+   colour deliberately instead of decorating with
+   several.
    ============================================ */
 
 :root {
@@ -20,7 +25,6 @@
   --primary-dark: #4C1D95;
   --coral: #E8486B;
   --teal: #147A70;
-  --yellow: #C97F0A;
   --lime: #C6EA3E;
   --border: #E9DFC9;
   --radius: 16px;
@@ -41,8 +45,9 @@ body {
 }
 
 h1, h2, h3, .brand {
-  font-family: 'Unbounded', 'Inter', system-ui, sans-serif;
+  font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
   font-weight: 600;
+  letter-spacing: -0.01em;
   color: var(--ink);
   line-height: 1.2;
 }
@@ -270,7 +275,6 @@ section.alt {
 .tag-violet { background: #EDE4FB; color: var(--primary-dark); }
 .tag-coral { background: #FCE4E9; color: var(--coral); }
 .tag-teal { background: #DFF3F0; color: var(--teal); }
-.tag-yellow { background: #FBEACB; color: var(--yellow); }
 
 /* ---------- Use case accordion toggle ---------- */
 
@@ -281,7 +285,7 @@ section.alt {
   gap: 12px;
   width: 100%;
   font: inherit;
-  font-family: 'Unbounded', 'Inter', sans-serif;
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
   font-weight: 600;
   color: var(--ink);
   background: none;
@@ -348,7 +352,7 @@ table.compare th, table.compare td {
 table.compare thead th {
   background: var(--ink);
   color: #fff;
-  font-family: 'Unbounded', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 1.05rem;
 }
 
@@ -459,10 +463,10 @@ table.compare td.price {
 }
 
 .learn-form .btn-primary {
-  background: var(--yellow);
-  color: var(--ink);
+  background: #fff;
+  color: var(--primary-dark);
 }
-.learn-form .btn-primary:hover { background: #b56f08; color: #fff; }
+.learn-form .btn-primary:hover { background: var(--bg); }
 
 .form-status {
   margin-top: 20px;
@@ -596,19 +600,22 @@ footer.site-footer a { color: var(--ink-soft); }
 .term-list {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid var(--border);
+  gap: 10px;
 }
 
 .term-row {
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 28px;
-  padding: 24px 0;
-  border-bottom: 1px solid var(--border);
+  align-items: center;
+  padding: 22px 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
 }
 
 .term-name {
-  font-family: 'Unbounded', 'Inter', sans-serif;
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
   font-weight: 700;
   font-size: 1.05rem;
   color: var(--ink);
@@ -626,7 +633,7 @@ footer.site-footer a { color: var(--ink-soft); }
   .term-row {
     grid-template-columns: 1fr;
     gap: 6px;
-    padding: 18px 0;
+    padding: 18px 20px;
   }
 }
 
@@ -640,7 +647,7 @@ footer.site-footer a { color: var(--ink-soft); }
 .editorial p { color: var(--ink-soft); }
 
 .editorial p.pull {
-  font-family: 'Unbounded', 'Inter', sans-serif;
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.4;
@@ -654,19 +661,22 @@ footer.site-footer a { color: var(--ink-soft); }
 .path-list {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid var(--border);
+  gap: 10px;
 }
 
 .path-row {
   display: grid;
   grid-template-columns: minmax(220px, 360px) 1fr;
   gap: 28px;
-  padding: 26px 0;
-  border-bottom: 1px solid var(--border);
+  align-items: center;
+  padding: 24px 26px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
 }
 
 .path-prompt {
-  font-family: 'Unbounded', 'Inter', sans-serif;
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
   font-weight: 600;
   font-size: 1.05rem;
   color: var(--ink);
@@ -691,7 +701,7 @@ footer.site-footer a { color: var(--ink-soft); }
   .path-row {
     grid-template-columns: 1fr;
     gap: 8px;
-    padding: 18px 0;
+    padding: 18px 20px;
   }
 }
 
