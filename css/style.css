@@ -607,7 +607,7 @@ footer.site-footer a { color: var(--ink-soft); }
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 28px;
-  align-items: start;
+  align-items: center;
   padding: 22px 24px;
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -668,7 +668,7 @@ footer.site-footer a { color: var(--ink-soft); }
   display: grid;
   grid-template-columns: minmax(220px, 360px) 1fr;
   gap: 28px;
-  align-items: start;
+  align-items: center;
   padding: 24px 26px;
   background: var(--bg-card);
   border: 1px solid var(--border);
