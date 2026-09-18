@@ -651,19 +651,39 @@ footer.site-footer a { color: var(--ink-soft); }
 /* ---------- Editorial prose block (replaces card-grid for a running
    argument rather than a set of parallel options) ---------- */
 
+.editorial-row {
+  display: flex;
+  gap: 56px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
 .editorial {
-  max-width: 680px;
+  flex: 1 1 420px;
+  max-width: 620px;
 }
 
 .editorial p { color: var(--ink-soft); }
 
-.editorial p.pull {
+.editorial-pull {
+  flex: 1 1 260px;
+  max-width: 320px;
+  margin: 6px 0 0;
+  padding: 4px 0 4px 24px;
+  border-left: 3px solid var(--primary);
   font-family: 'Manrope', 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 1.4;
   color: var(--primary-dark);
-  margin: 28px 0;
+}
+
+@media (max-width: 700px) {
+  .editorial-pull {
+    max-width: none;
+    font-size: 1.3rem;
+    padding: 4px 0 4px 18px;
+  }
 }
 
 /* ---------- Path list (label + description/link row, for genuinely
