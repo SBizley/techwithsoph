@@ -29,6 +29,9 @@
   --border: #E9DFC9;
   --radius: 16px;
   --max-width: 1080px;
+  --shadow-sm: 0 1px 3px rgba(26, 20, 37, 0.07), 0 1px 2px rgba(26, 20, 37, 0.05);
+  --shadow-md: 0 10px 24px rgba(26, 20, 37, 0.12);
+  --shadow-lg: 0 20px 44px rgba(26, 20, 37, 0.16);
 }
 
 * { box-sizing: border-box; }
@@ -226,11 +229,22 @@ section.alt {
 
 .card {
   background: var(--bg-card);
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 24px;
   display: flex;
   flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card:hover { transform: none; }
 }
 
 /* Accent classes stay in the markup for now but no longer paint a
@@ -448,6 +462,7 @@ table.compare td.price {
   color: #fff;
   border-radius: var(--radius);
   padding: 36px;
+  box-shadow: var(--shadow-md);
 }
 
 .learn-form h2 { color: #fff; }
@@ -534,7 +549,7 @@ footer.site-footer a { color: var(--ink-soft); }
   object-fit: cover;
   border-radius: var(--radius);
   border: 3px solid var(--bg-card);
-  box-shadow: 0 10px 28px rgba(26, 20, 37, 0.14);
+  box-shadow: var(--shadow-lg);
   flex-shrink: 0;
 }
 
@@ -593,6 +608,7 @@ footer.site-footer a { color: var(--ink-soft); }
     background: var(--bg);
     border-bottom: 2px solid var(--border);
     padding: 8px 20px 20px;
+    box-shadow: var(--shadow-md);
   }
 
   nav.site-nav.open { display: flex; }
