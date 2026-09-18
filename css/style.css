@@ -343,8 +343,8 @@ section.alt {
 
 .table-wrap {
   overflow-x: auto;
-  border-radius: var(--radius);
-  border: 2px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow-sm);
 }
 
 table.compare {
@@ -627,7 +627,8 @@ footer.site-footer a { color: var(--ink-soft); }
 .term-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0;
+  border-top: 1px solid var(--border);
 }
 
 .term-row {
@@ -635,11 +636,12 @@ footer.site-footer a { color: var(--ink-soft); }
   grid-template-columns: 220px 1fr;
   gap: 28px;
   align-items: center;
-  padding: 22px 24px;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  padding: 20px 6px;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s ease;
 }
+
+.term-row:hover { background: rgba(109, 40, 217, 0.045); }
 
 .term-name {
   font-family: 'Manrope', 'Inter', sans-serif;
@@ -660,7 +662,7 @@ footer.site-footer a { color: var(--ink-soft); }
   .term-row {
     grid-template-columns: 1fr;
     gap: 6px;
-    padding: 18px 20px;
+    padding: 16px 6px;
   }
 }
 
@@ -708,18 +710,42 @@ footer.site-footer a { color: var(--ink-soft); }
 .path-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0;
+  border-top: 1px solid var(--border);
 }
 
 .path-row {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(220px, 360px) 1fr;
   gap: 28px;
   align-items: center;
-  padding: 24px 26px;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  padding: 22px 34px 22px 6px;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s ease;
+}
+
+.path-row:hover { background: rgba(109, 40, 217, 0.045); }
+
+/* Every path-row leads somewhere via a .path-link inside it, so the
+   whole row gets a reveal-on-hover arrow rather than relying on the
+   underlined text alone to say "this goes somewhere". */
+.path-row::after {
+  content: "\2192";
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%) translateX(-6px);
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.1rem;
+  opacity: 0;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.path-row:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
 }
 
 .path-prompt {
@@ -748,8 +774,14 @@ footer.site-footer a { color: var(--ink-soft); }
   .path-row {
     grid-template-columns: 1fr;
     gap: 8px;
-    padding: 18px 20px;
+    padding: 16px 6px;
   }
+
+  .path-row::after { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .path-row::after { transition: none; }
 }
 
 /* ---------- Numbered step sequence (a process, not a card grid):
