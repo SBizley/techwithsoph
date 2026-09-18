@@ -320,6 +320,13 @@ section.alt {
 
 /* ---------- Tool comparison table ---------- */
 
+.scroll-hint {
+  display: none;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin: 0 0 8px;
+}
+
 .table-wrap {
   overflow-x: auto;
   border-radius: var(--radius);
@@ -581,6 +588,7 @@ footer.site-footer a { color: var(--ink-soft); }
     left: 0;
     right: 0;
     flex-direction: column;
+    align-items: center;
     gap: 2px;
     background: var(--bg);
     border-bottom: 2px solid var(--border);
@@ -589,11 +597,13 @@ footer.site-footer a { color: var(--ink-soft); }
 
   nav.site-nav.open { display: flex; }
 
-  nav.site-nav a { padding: 13px 14px; }
+  nav.site-nav a { padding: 13px 14px; text-align: center; }
 
   section { padding: 36px 0; }
 
   .about-hero-row { justify-content: center; text-align: left; }
+
+  .scroll-hint { display: block; }
 }
 
 /* ---------- Term list (jargon library, replaces boxed cards) ---------- */
