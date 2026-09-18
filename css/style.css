@@ -379,6 +379,16 @@ table.compare td.price {
   white-space: pre-wrap;
 }
 
+/* Prompt-template grid cards (prompting.html): headings run different
+   lengths card to card, so without help the boxes below them start at
+   different heights and the row looks jagged. Cards already stretch to
+   equal height via .grid's align-items: stretch, so pinning the box to
+   the bottom with margin-top: auto lines every box up on the same
+   baseline regardless of heading length. */
+.prompt-card > .prompt-block {
+  margin-top: auto;
+}
+
 .prompt-copy-btn {
   position: absolute;
   top: 12px;
