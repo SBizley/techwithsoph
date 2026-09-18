@@ -521,7 +521,7 @@ footer.site-footer a { color: var(--ink-soft); }
 
 .about-hero-row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
   flex-wrap: wrap;
 }
