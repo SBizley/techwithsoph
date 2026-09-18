@@ -6,7 +6,7 @@
 <meta name="description" content="The single most-requested help topic from my own research, twice over: how to write a prompt that gets you something useful instead of generic filler.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -32,7 +32,6 @@
 
   <section class="hero hero-tight">
     <div class="wrap">
-      <span class="kicker">The other most-requested thing</span>
       <h1>Prompt basics</h1>
       <p class="lead">When I asked what people needed the most help with, this beat everything else, then it turned up again anyway, buried in the answers nobody prompted for it. So here's the whole thing properly, not a rushed paragraph at the bottom of another page.</p>
     </div>
@@ -98,7 +97,7 @@
   <section class="alt">
     <div class="wrap">
       <div class="callout good">
-        <strong>My honest take:</strong> you don't need to learn "prompt engineering", that's a job title, not a life skill. You just need to stop assuming it can read your mind, and tell it what you're picturing. More on why vague prompts trip people up in <a href="risks.html">Watchouts</a>.
+        You don't need to learn "prompt engineering", that's a job title, not a life skill. You just need to stop assuming it can read your mind, and tell it what you're picturing. More on why vague prompts trip people up in <a href="risks.html">Watchouts</a>.
       </div>
     </div>
   </section>
@@ -110,22 +109,22 @@
         <p>A few that work for almost anything, not just the examples above. Copy one, fill in the brackets, go.</p>
       </div>
       <div class="grid">
-        <div class="card accent-violet">
+        <div class="card accent-violet prompt-card">
           <span class="tag tag-violet">Tidy something up</span>
           <h3>Turn something rough into something usable</h3>
           <div class="prompt-block">Here's a rough version of [what you're working on]: [paste it in]. Tidy it up, keep my voice, and tell me if anything's confusing or missing.</div>
         </div>
-        <div class="card accent-coral">
-          <span class="tag tag-coral">Understand something</span>
+        <div class="card accent-coral prompt-card">
+          <span class="tag tag-coral">Explain it simply</span>
           <h3>Get a straight explanation</h3>
           <div class="prompt-block">Explain [topic or thing you don't understand] like I'm smart but new to this. No jargon, and if you have to use a technical word, explain it in the same sentence.</div>
         </div>
-        <div class="card accent-teal">
+        <div class="card accent-teal prompt-card">
           <span class="tag tag-teal">Before you decide</span>
           <h3>Check your own thinking</h3>
           <div class="prompt-block">I'm planning to [decision or plan]. Here's my reasoning: [your reasoning]. Poke holes in it. Tell me what I'm missing or what could go wrong.</div>
         </div>
-        <div class="card">
+        <div class="card prompt-card">
           <span class="tag tag-violet">Get started</span>
           <h3>Get a first draft, not a lecture</h3>
           <div class="prompt-block">Write me a first draft of [thing you need, e.g. a speech, a bio, a job description]. Here's what it needs to cover: [key points]. Keep it in my voice, not a generic version.</div>
@@ -174,6 +173,8 @@
 <script src="js/form-feedback.js"></script>
 
 <script src="js/nav-toggle.js"></script>
+
+<script src="js/step-reveal.js"></script>
 
 </body>
 </html>
