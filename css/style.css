@@ -7,7 +7,7 @@
    sibling items (never a fixed site-wide meaning),
    and a neutral grey tag marks the odd one out
    (advanced, sycophancy). No more than three tag
-   colours on any page. Space Grotesk for display
+   colours on any page. Manrope for display
    headings (tighter, more confident than the old
    Unbounded), Inter for body. Rebranded 2026-09-16
    after the "keep the violet, drop the rainbow"
@@ -45,7 +45,7 @@ body {
 }
 
 h1, h2, h3, .brand {
-  font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  font-family: 'Manrope', 'Inter', system-ui, sans-serif;
   font-weight: 600;
   letter-spacing: -0.01em;
   color: var(--ink);
@@ -276,7 +276,7 @@ section.alt {
   gap: 12px;
   width: 100%;
   font: inherit;
-  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-family: 'Manrope', 'Inter', sans-serif;
   font-weight: 600;
   color: var(--ink);
   background: none;
@@ -343,7 +343,7 @@ table.compare th, table.compare td {
 table.compare thead th {
   background: var(--ink);
   color: #fff;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 1.05rem;
 }
 
@@ -616,7 +616,7 @@ footer.site-footer a { color: var(--ink-soft); }
 }
 
 .term-name {
-  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-family: 'Manrope', 'Inter', sans-serif;
   font-weight: 700;
   font-size: 1.05rem;
   color: var(--ink);
@@ -648,7 +648,7 @@ footer.site-footer a { color: var(--ink-soft); }
 .editorial p { color: var(--ink-soft); }
 
 .editorial p.pull {
-  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-family: 'Manrope', 'Inter', sans-serif;
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.4;
@@ -677,7 +677,7 @@ footer.site-footer a { color: var(--ink-soft); }
 }
 
 .path-prompt {
-  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-family: 'Manrope', 'Inter', sans-serif;
   font-weight: 600;
   font-size: 1.05rem;
   color: var(--ink);
