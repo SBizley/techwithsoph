@@ -736,6 +736,77 @@ footer.site-footer a { color: var(--ink-soft); }
   }
 }
 
+/* ---------- Numbered step sequence (a process, not a card grid):
+   connected timeline with a scroll-in reveal, see js/step-reveal.js ---------- */
+
+.steps {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.steps::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  bottom: 22px;
+  left: 21px;
+  width: 2px;
+  background: var(--border);
+}
+
+.step {
+  position: relative;
+  display: flex;
+  gap: 24px;
+  padding: 18px 0;
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.step.step-hidden {
+  opacity: 0;
+  transform: translateY(18px);
+}
+
+.step-marker {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Manrope', 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.step-body { padding-top: 6px; }
+
+.step-body p.step-title {
+  font-family: 'Manrope', 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ink);
+  margin: 0 0 6px;
+}
+
+.step-body p { color: var(--ink-soft); margin: 0 0 10px; }
+
+.step-body p:last-child { margin-bottom: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .step { transition: none; }
+  .step.step-hidden { opacity: 1; transform: none; }
+}
+
 /* ---------- Layout utility: hero immediately followed by content ---------- */
 
 .hero-tight { padding-bottom: 12px; }
